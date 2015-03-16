@@ -1,0 +1,35 @@
+project (assignment3) {
+  exename = assignment3
+  install = .
+
+  specific (make) {
+    requires += cpp11
+    compile_flags += -std=c++11
+  }
+ 
+  Source_Files {
+    driver.cpp
+    evaluator.cpp
+    parser.cpp
+  }
+
+  Template_Files {
+    Add.cpp
+  	Array.cpp
+    BinaryOperation.cpp
+    Divide.cpp
+    Modulus.cpp
+    Multiply.cpp
+    Operand.cpp
+    Queue.cpp
+    Stack.cpp
+    StackAdd.cpp
+    StackDivide.cpp
+    StackElementFactory.cpp
+    StackModulus.cpp
+    StackMultiply.cpp
+    StackOperand.cpp
+    StackSubtract.cpp
+    Subtract.cpp
+  }
+}
